@@ -4,11 +4,9 @@ An app to show latest Financial Times headlines by querying [FT API](https://dev
 
 At the moment the app shows 100 newest FT articles (API's default), and also provides a search facility.
 
-In order to run this app you will need to [register with FT](https://developer.ft.com/) and get the API key.
-
 ### Installing and running
 
-In order to run this app you will need to [register with FT](https://developer.ft.com/) and get the API key. After this is done:
+In order to run this app locally you will need to [register with FT](https://developer.ft.com/) and get the API key. After this is done:
 
 - Clone this repository
 - Change into its root folder
