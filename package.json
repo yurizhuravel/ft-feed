@@ -8,7 +8,7 @@
   "author": "yuri-zhuravel",
   "license": "MIT",
   "engines": {
-    "node": "4.1.1"
+    "node": "8.6.0"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
