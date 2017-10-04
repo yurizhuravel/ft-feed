@@ -1,0 +1,20 @@
+{
+  "name": "ft-feed",
+  "dependencies": {
+    "o-grid": "^4.2.0",
+    "o-header": "^7.1.0",
+    "o-footer": "^4.0.0",
+    "o-colors": "^4.0.1",
+    "o-fonts": "^3.0.0",
+    "o-icons": "^5.4.0",
+    "o-buttons": "^5.0.0",
+    "o-card": "^3.0.0",
+    "o-hoverable":	"^3.1.0",
+    "o-typography":	"^5.0.1"
+  },
+  "resolutions": {
+    "o-header": "^7.1.0",
+    "o-colors": "^4.1.2",
+    "o-fonts": "^3.0.0"
+  }
+}

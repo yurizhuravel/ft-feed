@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html class="core">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>FT Headline Feeder</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--
+		Perform your cuts the mustard test.
+	-->
+	<script>
+		var cutsTheMustard = ('querySelector' in document && 'localStorage' in window && 'addEventListener' in window);
+
+		if (cutsTheMustard) {
+
+			document.documentElement.className = document.documentElement.className.replace(/\bcore\b/g, 'enhanced');
+		}
+	</script>
+
+	<style>
+		.core .o--if-js,
+		.enhanced .o--if-no-js { display: none !important; }
+	</style>
+
+	<link rel="stylesheet" href="/bundle.css" />
+
+
+	<script src="https://polyfill.io/v2/polyfill.min.js"></script>
+
+	<script>
+		(function(src) {
+			if (cutsTheMustard) {
+				var o = document.createElement('script');
+				o.async = o.defer = true;
+				o.src = src;
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(o, s);
+			}
+		}('/bundle.js'));
+	</script>
+</head>
+<body>
+ <header class="o-header o-header--simple" data-o-component="o-header" data-o-header--no-js="">
+ 	<div class="o-header__row o-header__top">
+ 		<div class="o-header__container">
+ 			<div class="o-header__top-wrapper">
+
+ 				<div class="o-header__top-column o-header__top-column--left">
+ 					<a href="#o-header-search" class="o-header__top-link o-header__top-link--search" aria-controls="o-header-search" title="Open search bar">
+ 						<span class="o-header__top-link-label">Search</span>
+ 					</a>
+ 				</div>
+
+ 				<div class="o-header__top-column o-header__top-column--center">
+ 					<!--<div class="o-header__top-takeover"></div>-->
+ 					<a class="o-header__top-logo" href="/" title="Go to FT Feed homepage">
+ 						<span class="o-header__visually-hidden">Financial Times</span>
+ 					</a>
+ 				</div>
+
+ 			</div>
+ 		</div>
+ 	</div>
+
+ 	<div id="o-header-search" class="o-header__row o-header__search o--if-js" role="search" data-o-header-search="">
+ 		<div class="o-header__container">
+ 			<form class="o-header__search-form" action="/search" role="search" aria-label="Site search">
+ 				<label class="o-header__visually-hidden" for="o-header-search-term-js">Search the <abbr title="Financial Times">FT</abbr></label>
+ 				<input class="o-header__search-term" id="o-header-search-term-js" name="q" type="text" placeholder="Search the FT"></input>
+ 				<button class="o-header__search-submit" type="submit">
+ 					Search
+ 				</button>
+ 				<button class="o-header__search-close" type="button" aria-controls="o-header-search" title="Close search bar">
+ 					<span class="o-header__visually-hidden">Close</span>
+ 				</button>
+ 			</form>
+ 		</div>
+ 	</div>
+
+<script src="//www.ft.com/__origami/service/build/v2/bundles/js?modules=o-header%407.1.0%3A%2Fdemos%2Fsrc%2Fmain.js%2Co-colors%40%5E4.0.0"></script>
+ </header>
+
+ <ul>
+ <% for(var i=0; i<articles.length; i++) {%>
+   <li><b><a href=<%= articles[i].location.uri %> target="_blank"> <%= articles[i].title.title %></a></b><br>
+   <%= articles[i].summary.excerpt %>...<br>
+   <i><%= articles[i].editorial.byline %></i><p>
+ </li>
+ <% } %>
+ </ul>
+
+</body>
+</html>
