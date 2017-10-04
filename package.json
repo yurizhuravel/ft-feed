@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node ./bin/www"
   },
-  "author": "yuri-zhuravel",
+  "author": "Yuri Zhuravel",
   "license": "MIT",
   "engines": {
     "node": "8.6.0"
@@ -18,6 +18,7 @@
     "ejs": "~2.5.6",
     "express": "^4.15.5",
     "morgan": "~1.8.1",
+    "request": "latest",
     "request-promise": "^4.2.2",
     "serve-favicon": "~2.4.2"
   },
