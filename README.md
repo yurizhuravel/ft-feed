@@ -1,4 +1,4 @@
-#Financial Times Feed
+## Financial Times Feed
 
 An app to show latest Financial Times headlines by querying [FT API](https://developer.ft.com/docs/license_quick_start/headlinelicense).
 
@@ -13,7 +13,7 @@ In order to run this app you will need to [register with FT](https://developer.f
 - Clone this repository
 - Change into its root folder
 - Install dependencies by running `npm install`
-- Create a file called .env containing your FT Headline API key, like so:
+- Create a file called `.env` containing your FT Headline API key, like so:
 ```
 FT_HL_KEY=[insert your key]
 ```
