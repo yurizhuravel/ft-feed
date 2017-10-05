@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "postinstall": "bower install & gulp"
   },
   "author": "Yuri Zhuravel",
   "license": "MIT",
@@ -20,11 +21,12 @@
     "morgan": "~1.8.1",
     "request": "latest",
     "request-promise": "^4.2.2",
-    "serve-favicon": "~2.4.2"
+    "serve-favicon": "~2.4.2",
+    "gulp": "latest"
   },
   "devDependencies": {
     "nodemon": "^1.12.1",
     "origami-build-tools": "latest",
-    "gulp": "latest"
+
   }
 }
