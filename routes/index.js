@@ -23,13 +23,6 @@ const fetchAll = {
   json: true
 };
 
-
-// /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'FT Feed' });
-// });
-
-
 router.get('/', (req,res) => {
   request(fetchAll)
   .then(function (response) {
