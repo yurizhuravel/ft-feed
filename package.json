@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "postinstall": "bower install & gulp"
+    "postinstall": "bower install && gulp"
   },
   "author": "Yuri Zhuravel",
   "license": "MIT",
