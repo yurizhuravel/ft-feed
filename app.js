@@ -15,7 +15,7 @@ const app = express();
 app.set('views', path.join(__dirname, 'views')); // eslint-disable-line
 app.set('view engine', 'ejs');
 
-app.use(favicon(path.join(__dirname, '', 'favicon.ico'))); // eslint-disable-line
+// app.use(favicon(path.join(__dirname, '', 'favicon.ico'))); // eslint-disable-line
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
