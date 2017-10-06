@@ -4,6 +4,8 @@ An app to show latest Financial Times headlines by querying [FT API](https://dev
 
 At the moment the app shows 100 newest FT articles (API's default), and also provides a search facility.
 
+[A demo version on Heroku](https://ft-feed.herokuapp.com/)
+
 ### Installing and running
 
 In order to run this app locally you will need to [register with FT](https://developer.ft.com/) and get the API key. After this is done:
@@ -27,6 +29,8 @@ FT headlines should then be available on `http://localhost:3000/`
 - EJS for templating
 - [Origami](http://origami.ft.com/), a proprietary FT's framework for styling
 - Gulp
+- Bower
+- Heroku for hosting
 
 ### Next development goals
 
