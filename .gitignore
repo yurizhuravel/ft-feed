@@ -37,3 +37,4 @@ node_modules/
 public/
 !public/favicon.ico
 demos/local/
+.vscode
